@@ -258,30 +258,31 @@ export default function Home() {
             href="https://www.instagram.com/dearpages_art" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="group block relative overflow-hidden rounded-[2rem] bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-8 sm:p-12 hover:border-[#3a0005]/30 transition-all duration-500 shadow-xl hover:shadow-2xl hover:-translate-y-1"
+            className="group block relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-white to-zinc-50 dark:from-zinc-900 dark:to-zinc-950 border border-zinc-200 dark:border-zinc-800 p-8 sm:p-12 transition-all duration-700 shadow-xl hover:shadow-[0_20px_60px_-15px_rgba(232,165,177,0.3)] dark:hover:shadow-[0_20px_60px_-15px_rgba(58,0,5,0.6)] hover:-translate-y-2"
           >
-            <div className="absolute -top-10 -right-10 p-8 opacity-[0.03] dark:opacity-5 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none">
-              <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            <div className="absolute -top-10 -right-10 p-8 opacity-[0.03] dark:opacity-5 group-hover:opacity-10 group-hover:rotate-12 group-hover:scale-125 transition-all duration-1000 pointer-events-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="animate-[pulse_4s_ease-in-out_infinite]"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
             </div>
             
             <div className="relative z-10 flex flex-col sm:flex-row items-center gap-8 sm:gap-12">
-              <div className="flex-shrink-0 flex items-center justify-center w-24 h-24 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 p-[3px] shadow-lg group-hover:scale-105 transition-transform duration-500">
-                <div className="w-full h-full bg-white dark:bg-zinc-900 rounded-full flex items-center justify-center">
-                  <svg className="w-10 h-10 text-zinc-900 dark:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              <div className="flex-shrink-0 flex items-center justify-center w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 p-[3px] shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 relative">
+                <div className="absolute inset-0 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 rounded-full blur-md opacity-0 group-hover:opacity-60 transition-opacity duration-500"></div>
+                <div className="w-full h-full bg-white dark:bg-zinc-900 rounded-full flex items-center justify-center relative z-10 group-hover:bg-transparent transition-colors duration-500">
+                  <svg className="w-10 h-10 sm:w-12 sm:h-12 text-zinc-900 dark:text-white group-hover:text-white transition-colors duration-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                 </div>
               </div>
               
               <div className="flex-1 text-center sm:text-left">
-                <p className="text-sm font-bold tracking-widest text-[#3a0005] dark:text-[#E8A5B1] uppercase mb-2">Join Our Community</p>
-                <h2 className="text-3xl sm:text-4xl font-black text-zinc-900 dark:text-white mb-3">@DearPages_art</h2>
-                <p className="text-lg text-zinc-600 dark:text-zinc-400">
+                <p className="text-sm font-bold tracking-widest text-[#3a0005] dark:text-[#E8A5B1] uppercase mb-2 group-hover:text-purple-600 dark:group-hover:text-yellow-400 transition-colors duration-500">Join Our Community</p>
+                <h2 className="text-3xl sm:text-4xl font-black text-zinc-900 dark:text-white mb-3 group-hover:translate-x-2 transition-transform duration-500">@DearPages_art</h2>
+                <p className="text-lg text-zinc-600 dark:text-zinc-400 group-hover:translate-x-2 transition-transform duration-500 delay-75">
                   Do follow our Instagram page! <br className="hidden sm:block" />
-                  <span className="font-semibold text-zinc-900 dark:text-white">Like, Share, Follow, and Order!</span>
+                  <span className="font-semibold text-zinc-900 dark:text-white bg-gradient-to-r from-purple-600 to-red-500 bg-[length:0%_2px] bg-no-repeat bg-bottom group-hover:bg-[length:100%_2px] transition-all duration-700">Like, Share, Follow, and Order!</span>
                 </p>
               </div>
               
-              <div className="hidden sm:flex flex-shrink-0 items-center justify-center w-14 h-14 rounded-full bg-zinc-100 dark:bg-zinc-800 group-hover:bg-[#3a0005] text-zinc-400 group-hover:text-white transition-colors duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              <div className="hidden sm:flex flex-shrink-0 items-center justify-center w-14 h-14 rounded-full bg-zinc-100 dark:bg-zinc-800 group-hover:bg-gradient-to-tr group-hover:from-yellow-400 group-hover:to-purple-600 text-zinc-400 group-hover:text-white transition-all duration-500 group-hover:rotate-45 group-hover:scale-110 shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:-rotate-45 transition-transform duration-500"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
               </div>
             </div>
           </a>

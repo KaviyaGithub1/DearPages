@@ -42,7 +42,7 @@ export default function RootLayout({
                     sizes="(max-width: 768px) 48px, 56px"
                   />
                 </div>
-                <span className="hidden sm:inline-block text-2xl font-serif font-black tracking-tighter text-[#3a0005] dark:text-[#FDFBFB]">
+                <span className="inline-block text-xl sm:text-2xl font-serif font-black tracking-tighter text-[#3a0005] dark:text-[#FDFBFB]">
                   DearPages
                 </span>
               </a>
