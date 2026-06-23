@@ -134,11 +134,11 @@ export default function Home() {
                 <div className="flex flex-col gap-1 pt-4 border-t border-zinc-100 dark:border-zinc-800">
                   <div className="flex justify-between items-center text-sm font-medium text-zinc-900 dark:text-zinc-100">
                     <span>10 Pages</span>
-                    <span className="text-emerald-700 dark:text-emerald-400 font-bold bg-emerald-50 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-800 px-2.5 py-0.5 rounded-md shadow-sm">₹249</span>
+                    <span className="text-[#3a0005] dark:text-[#E8A5B1] font-bold bg-[#3a0005]/5 dark:bg-[#E8A5B1]/10 border border-[#3a0005]/20 dark:border-[#E8A5B1]/20 px-2.5 py-0.5 rounded-md shadow-sm">₹249</span>
                   </div>
                   <div className="flex justify-between items-center text-sm font-medium text-zinc-900 dark:text-zinc-100">
                     <span>15+ Pages</span>
-                    <span className="text-emerald-700 dark:text-emerald-400 font-bold bg-emerald-50 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-800 px-2.5 py-0.5 rounded-md shadow-sm">₹499</span>
+                    <span className="text-[#3a0005] dark:text-[#E8A5B1] font-bold bg-[#3a0005]/5 dark:bg-[#E8A5B1]/10 border border-[#3a0005]/20 dark:border-[#E8A5B1]/20 px-2.5 py-0.5 rounded-md shadow-sm">₹499</span>
                   </div>
                 </div>
               </div>
@@ -156,11 +156,11 @@ export default function Home() {
                 <div className="flex flex-col gap-1 pt-4 border-t border-zinc-100 dark:border-zinc-800">
                   <div className="flex justify-between items-center text-sm font-medium text-zinc-900 dark:text-zinc-100">
                     <span>All Languages</span>
-                    <span className="text-emerald-700 dark:text-emerald-400 font-bold bg-emerald-50 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-800 px-2.5 py-0.5 rounded-md shadow-sm">₹249</span>
+                    <span className="text-[#3a0005] dark:text-[#E8A5B1] font-bold bg-[#3a0005]/5 dark:bg-[#E8A5B1]/10 border border-[#3a0005]/20 dark:border-[#E8A5B1]/20 px-2.5 py-0.5 rounded-md shadow-sm">₹249</span>
                   </div>
                   <div className="flex justify-between items-center text-sm font-medium text-zinc-900 dark:text-zinc-100">
                     <span>Marvel (Special Offer)</span>
-                    <span className="text-emerald-700 dark:text-emerald-400 font-bold bg-emerald-50 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-800 px-2.5 py-0.5 rounded-md shadow-sm">₹199</span>
+                    <span className="text-[#3a0005] dark:text-[#E8A5B1] font-bold bg-[#3a0005]/5 dark:bg-[#E8A5B1]/10 border border-[#3a0005]/20 dark:border-[#E8A5B1]/20 px-2.5 py-0.5 rounded-md shadow-sm">₹199</span>
                   </div>
                 </div>
               </div>
@@ -178,7 +178,7 @@ export default function Home() {
                 <div className="flex flex-col gap-1 pt-4 border-t border-zinc-100 dark:border-zinc-800">
                   <div className="flex justify-between items-center text-sm font-medium text-zinc-900 dark:text-zinc-100">
                     <span>Each Poster</span>
-                    <span className="text-emerald-700 dark:text-emerald-400 font-bold bg-emerald-50 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-800 px-2.5 py-0.5 rounded-md shadow-sm">₹49</span>
+                    <span className="text-[#3a0005] dark:text-[#E8A5B1] font-bold bg-[#3a0005]/5 dark:bg-[#E8A5B1]/10 border border-[#3a0005]/20 dark:border-[#E8A5B1]/20 px-2.5 py-0.5 rounded-md shadow-sm">₹49</span>
                   </div>
                 </div>
               </div>
@@ -196,7 +196,7 @@ export default function Home() {
                 <div className="flex flex-col gap-1 pt-4 border-t border-zinc-100 dark:border-zinc-800">
                   <div className="flex justify-between items-center text-sm font-medium text-zinc-900 dark:text-zinc-100">
                     <span>Each Polaroid</span>
-                    <span className="text-emerald-700 dark:text-emerald-400 font-bold bg-emerald-50 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-800 px-2.5 py-0.5 rounded-md shadow-sm">₹19</span>
+                    <span className="text-[#3a0005] dark:text-[#E8A5B1] font-bold bg-[#3a0005]/5 dark:bg-[#E8A5B1]/10 border border-[#3a0005]/20 dark:border-[#E8A5B1]/20 px-2.5 py-0.5 rounded-md shadow-sm">₹19</span>
                   </div>
                 </div>
               </div>
@@ -214,19 +214,19 @@ export default function Home() {
                 <div className="flex flex-col gap-1 pt-4 border-t border-zinc-100 dark:border-zinc-800">
                   <div className="flex justify-between items-center text-sm font-medium text-zinc-900 dark:text-zinc-100">
                     <span>4.5 x 5 Size</span>
-                    <span className="text-emerald-700 dark:text-emerald-400 font-bold bg-emerald-50 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-800 px-2.5 py-0.5 rounded-md shadow-sm">₹39</span>
+                    <span className="text-[#3a0005] dark:text-[#E8A5B1] font-bold bg-[#3a0005]/5 dark:bg-[#E8A5B1]/10 border border-[#3a0005]/20 dark:border-[#E8A5B1]/20 px-2.5 py-0.5 rounded-md shadow-sm">₹39</span>
                   </div>
                   <div className="flex justify-between items-center text-sm font-medium text-zinc-900 dark:text-zinc-100">
                     <span>6 x 8 Size</span>
-                    <span className="text-emerald-700 dark:text-emerald-400 font-bold bg-emerald-50 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-800 px-2.5 py-0.5 rounded-md shadow-sm">₹45</span>
+                    <span className="text-[#3a0005] dark:text-[#E8A5B1] font-bold bg-[#3a0005]/5 dark:bg-[#E8A5B1]/10 border border-[#3a0005]/20 dark:border-[#E8A5B1]/20 px-2.5 py-0.5 rounded-md shadow-sm">₹45</span>
                   </div>
                   <div className="flex justify-between items-center text-sm font-medium text-zinc-900 dark:text-zinc-100">
                     <span>A4 Size</span>
-                    <span className="text-emerald-700 dark:text-emerald-400 font-bold bg-emerald-50 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-800 px-2.5 py-0.5 rounded-md shadow-sm">₹49</span>
+                    <span className="text-[#3a0005] dark:text-[#E8A5B1] font-bold bg-[#3a0005]/5 dark:bg-[#E8A5B1]/10 border border-[#3a0005]/20 dark:border-[#E8A5B1]/20 px-2.5 py-0.5 rounded-md shadow-sm">₹49</span>
                   </div>
                   <div className="flex justify-between items-center text-sm font-medium text-zinc-900 dark:text-zinc-100">
                     <span>12 x 18 Size</span>
-                    <span className="text-emerald-700 dark:text-emerald-400 font-bold bg-emerald-50 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-800 px-2.5 py-0.5 rounded-md shadow-sm">₹149</span>
+                    <span className="text-[#3a0005] dark:text-[#E8A5B1] font-bold bg-[#3a0005]/5 dark:bg-[#E8A5B1]/10 border border-[#3a0005]/20 dark:border-[#E8A5B1]/20 px-2.5 py-0.5 rounded-md shadow-sm">₹149</span>
                   </div>
                 </div>
               </div>
@@ -244,7 +244,7 @@ export default function Home() {
                 <div className="flex flex-col gap-1 pt-4 border-t border-zinc-100 dark:border-zinc-800">
                   <div className="flex justify-between items-center text-sm font-medium text-zinc-900 dark:text-zinc-100">
                     <span>Each Keychain</span>
-                    <span className="text-emerald-700 dark:text-emerald-400 font-bold bg-emerald-50 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-800 px-2.5 py-0.5 rounded-md shadow-sm">₹49</span>
+                    <span className="text-[#3a0005] dark:text-[#E8A5B1] font-bold bg-[#3a0005]/5 dark:bg-[#E8A5B1]/10 border border-[#3a0005]/20 dark:border-[#E8A5B1]/20 px-2.5 py-0.5 rounded-md shadow-sm">₹49</span>
                   </div>
                 </div>
               </div>
