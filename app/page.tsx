@@ -32,18 +32,18 @@ export default function Home() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#3a0005]/10 dark:bg-[#3a0005]/20 rounded-full blur-[120px] mix-blend-multiply dark:mix-blend-screen pointer-events-none"></div>
         
         <div className="relative z-10 flex flex-col items-center gap-8 text-center px-4 sm:px-6">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#3a0005]/5 dark:bg-white/5 border border-[#3a0005]/10 dark:border-white/10 backdrop-blur-md text-[#3a0005] dark:text-zinc-300 text-sm font-medium">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#3a0005]/5 dark:bg-white/5 border border-[#3a0005]/10 dark:border-white/10 backdrop-blur-md text-[#3a0005] dark:text-zinc-300 text-sm font-medium animate-fade-in-up opacity-0">
             <span className="flex h-2 w-2 rounded-full bg-[#3a0005] dark:bg-[#E8A5B1] animate-pulse"></span>
             New collections available now
           </div>
-          <h1 className="max-w-4xl text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter text-zinc-900 dark:text-white">
+          <h1 className="max-w-4xl text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter text-zinc-900 dark:text-white animate-fade-in-up opacity-0 delay-100">
             Art that speaks <br />
             <span className="bg-gradient-to-r from-[#3a0005] to-[#9A1E34] dark:from-[#E8A5B1] dark:to-[#3a0005] bg-clip-text text-transparent">to your soul.</span>
           </h1>
-          <p className="max-w-2xl text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 leading-relaxed">
+          <p className="max-w-2xl text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 leading-relaxed animate-fade-in-up opacity-0 delay-200">
             Discover our exclusive collection of magazines, posters, and polaraids. Bring your walls to life with DearPages.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 mt-4">
+          <div className="flex flex-col sm:flex-row gap-4 mt-4 animate-fade-in-up opacity-0 delay-300">
             <a href="#collections" className="px-8 py-4 rounded-full bg-[#3a0005] text-white font-bold text-lg hover:scale-105 transition-transform active:scale-95 shadow-xl shadow-[#3a0005]/20">
               Explore Collections
             </a>
@@ -58,7 +58,7 @@ export default function Home() {
       <section id="about" className="w-full py-16 sm:py-24 bg-white dark:bg-zinc-900">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6 animate-fade-in-up opacity-0 delay-100">
               <h2 className="text-sm font-bold tracking-widest text-[#3a0005] dark:text-[#E8A5B1] uppercase">Customized Magazines</h2>
               <h3 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-950 dark:text-zinc-50">
                 Turning your special moments into timeless stories.
@@ -70,12 +70,12 @@ export default function Home() {
                 Whether you are celebrating a birthday, a marriage, unforgettable trip memories, or the start of a new chapter in life, we are here to help you memorialize your journey. Let us craft the best memories of your life into a keepsake you will cherish forever.
               </p>
             </div>
-            <div className="relative w-full max-w-lg mx-auto aspect-[4/5] sm:aspect-square rounded-[2rem] overflow-hidden shadow-2xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700">
+            <div className="relative w-full max-w-lg mx-auto aspect-[4/5] sm:aspect-square rounded-[2rem] overflow-hidden shadow-2xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 animate-float">
               <Image 
                 src="/logo.jpeg" 
                 alt="DearPages Logo" 
                 fill
-                className="object-cover transition-transform hover:scale-105 duration-700"
+                className="object-cover transition-transform hover:scale-110 duration-1000"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
@@ -85,8 +85,8 @@ export default function Home() {
 
       {/* Services Section */}
       <section id="services" className="w-full py-24 sm:py-32 bg-[#FDFBFB] dark:bg-zinc-950 border-t border-[#3a0005]/10 dark:border-zinc-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-16 animate-fade-in-up opacity-0 delay-100">
             <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-950 dark:text-zinc-50 mb-4">
               Our Services
             </h2>
@@ -97,10 +97,12 @@ export default function Home() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="flex flex-col items-center text-center p-8 rounded-3xl bg-white dark:bg-zinc-900 border border-[#3a0005]/10 dark:border-zinc-800 hover:-translate-y-2 transition-transform hover:shadow-xl">
-                <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-bold text-[#3a0005] dark:text-zinc-50 mb-2">{service.title}</h3>
-                <p className="text-zinc-600 dark:text-zinc-400 text-sm">{service.description}</p>
+              <div key={index} className="group flex flex-col items-center text-center p-8 rounded-3xl bg-white dark:bg-zinc-900 border border-[#3a0005]/10 dark:border-zinc-800 hover:-translate-y-3 transition-all duration-500 hover:shadow-2xl hover:shadow-[#3a0005]/10 dark:hover:shadow-[#E8A5B1]/5 animate-fade-in-up opacity-0" style={{ animationDelay: `${(index + 2) * 100}ms` }}>
+                <div className="w-16 h-16 flex items-center justify-center rounded-2xl bg-[#3a0005]/5 dark:bg-[#E8A5B1]/10 text-3xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-transform duration-500">
+                  {service.icon}
+                </div>
+                <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-100 mb-3">{service.title}</h3>
+                <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">{service.description}</p>
               </div>
             ))}
           </div>
@@ -291,8 +293,8 @@ export default function Home() {
 
       {/* 4. Order / Contact Section */}
       <section id="contact" className="w-full py-24 sm:py-32 bg-white dark:bg-zinc-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-[#FDFBFB] dark:bg-zinc-950 rounded-3xl p-8 sm:p-16 border border-[#3a0005]/10 dark:border-zinc-800">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in-up opacity-0 delay-200">
+          <div className="bg-[#FDFBFB] dark:bg-zinc-950 rounded-[3rem] p-8 sm:p-16 border border-[#3a0005]/10 dark:border-zinc-800 shadow-2xl transition-transform duration-700 hover:scale-[1.02]">
             <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-950 dark:text-zinc-50 mb-6">
               Ready to Order?
             </h2>
