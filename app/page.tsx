@@ -262,8 +262,8 @@ export default function Home() {
             rel="noopener noreferrer"
             className="group block relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-white to-zinc-50 dark:from-zinc-900 dark:to-zinc-950 border border-zinc-200 dark:border-zinc-800 p-8 sm:p-12 transition-all duration-700 shadow-xl hover:shadow-[0_20px_60px_-15px_rgba(232,165,177,0.3)] dark:hover:shadow-[0_20px_60px_-15px_rgba(58,0,5,0.6)] hover:-translate-y-2"
           >
-            <div className="absolute -top-10 -right-10 p-8 opacity-[0.03] dark:opacity-5 group-hover:opacity-10 group-hover:rotate-12 group-hover:scale-125 transition-all duration-1000 pointer-events-none">
-              <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="animate-[pulse_4s_ease-in-out_infinite]"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            <div className="absolute top-1/2 -translate-y-1/2 right-0 sm:right-12 p-4 opacity-[0.04] dark:opacity-10 group-hover:opacity-15 group-hover:-rotate-12 group-hover:scale-110 transition-all duration-1000 pointer-events-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="animate-[pulse_4s_ease-in-out_infinite]"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
             </div>
             
             <div className="relative z-10 flex flex-col sm:flex-row items-center gap-8 sm:gap-12">
