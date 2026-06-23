@@ -55,7 +55,7 @@ export default function Home() {
       </section>
 
       {/* 2. About Section */}
-      <section id="about" className="w-full py-16 sm:py-24 bg-white dark:bg-zinc-900">
+      <section id="about" className="w-full py-[100px] bg-white dark:bg-zinc-900">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="flex flex-col gap-6 animate-fade-in-up opacity-0 delay-100">
@@ -84,7 +84,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="w-full py-24 sm:py-32 bg-[#FDFBFB] dark:bg-zinc-950 border-t border-[#3a0005]/10 dark:border-zinc-800">
+      <section id="services" className="w-full py-[100px] bg-[#FDFBFB] dark:bg-zinc-950 border-t border-[#3a0005]/10 dark:border-zinc-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16 animate-fade-in-up opacity-0 delay-100">
             <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-950 dark:text-zinc-50 mb-4">
@@ -110,7 +110,7 @@ export default function Home() {
       </section>
 
       {/* 3. Collections Section */}
-      <section id="collections" className="w-full py-24 sm:py-32 bg-white dark:bg-zinc-900 border-t border-[#3a0005]/10 dark:border-zinc-800">
+      <section id="collections" className="w-full py-[100px] bg-white dark:bg-zinc-900 border-t border-[#3a0005]/10 dark:border-zinc-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-950 dark:text-zinc-50 mb-4">
@@ -254,7 +254,7 @@ export default function Home() {
       </section>
 
       {/* Elegant Instagram Promo Section */}
-      <section className="w-full py-24 bg-[#FDFBFB] dark:bg-zinc-950">
+      <section className="w-full py-[100px] bg-[#FDFBFB] dark:bg-zinc-950">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <a 
             href="https://www.instagram.com/dearpages_art" 
@@ -267,10 +267,10 @@ export default function Home() {
             </div>
             
             <div className="relative z-10 flex flex-col sm:flex-row items-center gap-8 sm:gap-12">
-              <div className="flex-shrink-0 flex items-center justify-center w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 p-[3px] shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 relative">
+              <div className="flex-shrink-0 flex items-center justify-center w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 p-[3px] shadow-lg group-hover:scale-105 transition-all duration-500 relative">
                 <div className="absolute inset-0 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 rounded-full blur-md opacity-0 group-hover:opacity-60 transition-opacity duration-500"></div>
-                <div className="w-full h-full bg-white dark:bg-zinc-900 rounded-full flex items-center justify-center relative z-10 group-hover:bg-transparent transition-colors duration-500">
-                  <svg className="w-10 h-10 sm:w-12 sm:h-12 text-zinc-900 dark:text-white group-hover:text-white transition-colors duration-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                <div className="w-full h-full bg-white dark:bg-zinc-900 rounded-full flex items-center justify-center relative z-10 overflow-hidden">
+                  <Image src="/logo.jpeg" alt="DearPages Logo" fill className="object-cover" sizes="(max-width: 768px) 96px, 112px" />
                 </div>
               </div>
               
@@ -283,8 +283,8 @@ export default function Home() {
                 </p>
               </div>
               
-              <div className="hidden sm:flex flex-shrink-0 items-center justify-center w-14 h-14 rounded-full bg-zinc-100 dark:bg-zinc-800 group-hover:bg-gradient-to-tr group-hover:from-yellow-400 group-hover:to-purple-600 text-zinc-400 group-hover:text-white transition-all duration-500 group-hover:rotate-45 group-hover:scale-110 shadow-md">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:-rotate-45 transition-transform duration-500"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              <div className="hidden sm:flex flex-shrink-0 items-center justify-center w-14 h-14 rounded-full bg-zinc-100 dark:bg-zinc-800 group-hover:bg-gradient-to-tr group-hover:from-yellow-400 group-hover:to-purple-600 text-zinc-400 group-hover:text-white transition-all duration-500 group-hover:scale-110 shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-500"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
               </div>
             </div>
           </a>
@@ -292,7 +292,7 @@ export default function Home() {
       </section>
 
       {/* 4. Order / Contact Section */}
-      <section id="contact" className="w-full py-24 sm:py-32 bg-white dark:bg-zinc-900">
+      <section id="contact" className="w-full py-[100px] bg-white dark:bg-zinc-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in-up opacity-0 delay-200">
           <div className="bg-[#FDFBFB] dark:bg-zinc-950 rounded-[3rem] p-8 sm:p-16 border border-[#3a0005]/10 dark:border-zinc-800 shadow-2xl transition-transform duration-700 hover:scale-[1.02]">
             <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-950 dark:text-zinc-50 mb-6">
