@@ -39,6 +39,14 @@ body {
     50% { transform: translateY(-15px); }
   }
   
+  @keyframes fly {
+    0% { transform: translate(0, 0) scale(1); }
+    25% { transform: translate(20vw, 15vh) scale(1.1); }
+    50% { transform: translate(5vw, 40vh) scale(0.9); }
+    75% { transform: translate(-20vw, 20vh) scale(1.05); }
+    100% { transform: translate(0, 0) scale(1); }
+  }
+  
   .animate-fade-in-up {
     animation: fade-in-up 0.8s ease-out forwards;
   }
@@ -48,10 +56,15 @@ body {
   .animate-float {
     animation: float 5s ease-in-out infinite;
   }
+  .animate-fly {
+    animation: fly 25s ease-in-out infinite;
+  }
   
   .delay-100 { animation-delay: 100ms; }
   .delay-200 { animation-delay: 200ms; }
   .delay-300 { animation-delay: 300ms; }
   .delay-400 { animation-delay: 400ms; }
   .delay-500 { animation-delay: 500ms; }
+  .delay-2000 { animation-delay: 2s; }
+  .delay-4000 { animation-delay: 4s; }
 }

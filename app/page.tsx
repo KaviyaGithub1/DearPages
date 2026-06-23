@@ -27,9 +27,16 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center w-full">
       {/* 1. Hero Section */}
-      <section className="relative w-full min-h-[90vh] flex flex-col items-center justify-center overflow-hidden bg-[#FDFBFB] dark:bg-zinc-950">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#3a0005]/10 via-transparent to-[#3a0005]/10 dark:from-[#3a0005]/20 dark:via-zinc-950 dark:to-[#3A0A12]/30 z-0"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#3a0005]/10 dark:bg-[#3a0005]/20 rounded-full blur-[120px] mix-blend-multiply dark:mix-blend-screen pointer-events-none"></div>
+      {/* Animated Full-Page Background Orbs */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none z-[-1]">
+        <div className="absolute top-1/4 left-1/4 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-[#3a0005]/10 dark:bg-[#3a0005]/20 rounded-full blur-[100px] mix-blend-multiply dark:mix-blend-screen animate-fly"></div>
+        <div className="absolute top-1/2 right-1/4 w-[400px] sm:w-[600px] h-[400px] sm:h-[600px] bg-[#E8A5B1]/10 dark:bg-[#E8A5B1]/15 rounded-full blur-[120px] mix-blend-multiply dark:mix-blend-screen animate-fly delay-2000"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-[350px] sm:w-[550px] h-[350px] sm:h-[550px] bg-[#9A1E34]/10 dark:bg-[#9A1E34]/15 rounded-full blur-[100px] mix-blend-multiply dark:mix-blend-screen animate-fly delay-4000"></div>
+      </div>
+
+      {/* 1. Hero Section */}
+      <section className="relative w-full min-h-[90vh] flex flex-col items-center justify-center overflow-hidden bg-transparent">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#FDFBFB]/80 to-[#FDFBFB]/50 dark:from-zinc-950/80 dark:to-zinc-950/50 z-0"></div>
         
         <div className="relative z-10 flex flex-col items-center gap-8 text-center px-4 sm:px-6">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#3a0005]/5 dark:bg-white/5 border border-[#3a0005]/10 dark:border-white/10 backdrop-blur-md text-[#3a0005] dark:text-zinc-300 text-sm font-medium animate-fade-in-up opacity-0">
@@ -55,7 +62,7 @@ export default function Home() {
       </section>
 
       {/* 2. About Section */}
-      <section id="about" className="w-full py-[100px] bg-white dark:bg-zinc-900">
+      <section id="about" className="w-full py-[100px] bg-white/70 dark:bg-zinc-900/70 backdrop-blur-3xl relative z-10">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="flex flex-col gap-6 animate-fade-in-up opacity-0 delay-100">
@@ -84,7 +91,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="w-full py-[100px] bg-[#FDFBFB] dark:bg-zinc-950 border-t border-[#3a0005]/10 dark:border-zinc-800">
+      <section id="services" className="w-full py-[100px] bg-[#FDFBFB]/70 dark:bg-zinc-950/70 backdrop-blur-3xl border-t border-[#3a0005]/10 dark:border-zinc-800 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16 animate-fade-in-up opacity-0 delay-100">
             <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-950 dark:text-zinc-50 mb-4">
@@ -110,7 +117,7 @@ export default function Home() {
       </section>
 
       {/* 3. Collections Section */}
-      <section id="collections" className="w-full py-[100px] bg-white dark:bg-zinc-900 border-t border-[#3a0005]/10 dark:border-zinc-800">
+      <section id="collections" className="w-full py-[100px] bg-white/70 dark:bg-zinc-900/70 backdrop-blur-3xl border-t border-[#3a0005]/10 dark:border-zinc-800 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-950 dark:text-zinc-50 mb-4">
@@ -254,7 +261,7 @@ export default function Home() {
       </section>
 
       {/* Elegant Instagram Promo Section */}
-      <section className="w-full py-[100px] bg-[#FDFBFB] dark:bg-zinc-950">
+      <section className="w-full py-[100px] bg-[#FDFBFB]/70 dark:bg-zinc-950/70 backdrop-blur-3xl relative z-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <a 
             href="https://www.instagram.com/dearpages_art" 
@@ -292,7 +299,7 @@ export default function Home() {
       </section>
 
       {/* 4. Order / Contact Section */}
-      <section id="contact" className="w-full py-[100px] bg-white dark:bg-zinc-900">
+      <section id="contact" className="w-full py-[100px] bg-white/70 dark:bg-zinc-900/70 backdrop-blur-3xl relative z-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in-up opacity-0 delay-200">
           <div className="bg-[#FDFBFB] dark:bg-zinc-950 rounded-[3rem] p-8 sm:p-16 border border-[#3a0005]/10 dark:border-zinc-800 shadow-2xl transition-transform duration-700 hover:scale-[1.02]">
             <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-950 dark:text-zinc-50 mb-6">
