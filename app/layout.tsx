@@ -14,8 +14,25 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "DearPages.art",
-  description: "Magazines, Posters, Polaraids, and Wall Posters.",
+  title: "DearPages_art | Custom Magazines & Aesthetic Posters",
+  description: "Discover DearPages_art. We create bespoke custom magazines, aesthetic polaroids, movie posters, and personalized keychains. Perfect gifts in Chennai.",
+  keywords: ["Custom magazines", "Chennai", "polaroids", "aesthetic gifts", "movie magazines", "posters", "DearPages_art"],
+  openGraph: {
+    title: "DearPages_art | Custom Magazines & Aesthetic Posters",
+    description: "Get personalized custom magazines, polaroids, and high-quality posters. We deliver premium bespoke gifts in Chennai.",
+    url: "https://dearpages.art",
+    siteName: "DearPages_art",
+    images: [
+      {
+        url: "/logo.jpeg",
+        width: 800,
+        height: 600,
+        alt: "DearPages_art Custom Products",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

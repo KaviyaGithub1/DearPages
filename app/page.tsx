@@ -260,6 +260,43 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 3.5. Customer Reviews Section */}
+      <section id="reviews" className="w-full py-[100px] bg-[#FDFBFB]/70 dark:bg-zinc-950/70 backdrop-blur-3xl border-t border-[#3a0005]/10 dark:border-zinc-800 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 animate-fade-in-up opacity-0 delay-100">
+            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-950 dark:text-zinc-50 mb-4">
+              Loved by Our Clients
+            </h2>
+            <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
+              Don't just take our word for it. Here is what people are saying about our custom creations.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              { name: "Priya S.", text: "The custom magazine exceeded all my expectations! The paper quality is premium and the aesthetic is just perfect.", stars: 5 },
+              { name: "Rahul M.", text: "I ordered a Marvel movie magazine for my brother's birthday. Best gift ever. He absolutely loved the personalization!", stars: 5 },
+              { name: "Anita K.", text: "The polaroids came out so cute. The packaging was beautiful and delivery was super fast in Chennai. Highly recommend!", stars: 5 }
+            ].map((review, i) => (
+              <div key={i} className="flex flex-col bg-white/60 dark:bg-zinc-900/60 backdrop-blur-md p-8 rounded-3xl border border-[#3a0005]/10 dark:border-zinc-800 shadow-xl animate-fade-in-up opacity-0" style={{ animationDelay: `${(i + 2) * 100}ms` }}>
+                <div className="flex gap-1 mb-4 text-yellow-400">
+                  {[...Array(review.stars)].map((_, j) => (
+                    <svg key={j} xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  ))}
+                </div>
+                <p className="text-zinc-700 dark:text-zinc-300 italic flex-1 mb-6">&quot;{review.text}&quot;</p>
+                <div className="flex items-center gap-3 mt-auto pt-6 border-t border-zinc-200 dark:border-zinc-800">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#3a0005] to-[#E8A5B1] flex items-center justify-center text-white font-bold">
+                    {review.name.charAt(0)}
+                  </div>
+                  <span className="font-semibold text-zinc-900 dark:text-zinc-100">{review.name}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Elegant Instagram Promo Section */}
       <section className="w-full py-[100px] bg-[#FDFBFB]/70 dark:bg-zinc-950/70 backdrop-blur-3xl relative z-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -298,7 +335,42 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. Order / Contact Section */}
+      {/* 4. FAQ Section */}
+      <section id="faq" className="w-full py-[100px] bg-white/70 dark:bg-zinc-900/70 backdrop-blur-3xl border-t border-[#3a0005]/10 dark:border-zinc-800 relative z-10">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 animate-fade-in-up opacity-0 delay-100">
+            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-950 dark:text-zinc-50 mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg text-zinc-600 dark:text-zinc-400">
+              Everything you need to know about our custom creations and ordering process.
+            </p>
+          </div>
+          
+          <div className="flex flex-col gap-4">
+            {[
+              { q: "How do I place an order for a custom magazine?", a: "Once you select the size and number of pages, simply click on the 'WhatsApp Us' button below. We will guide you on how to share your high-quality photos and text securely." },
+              { q: "How long does shipping take?", a: "Because every item is fully customized, it takes about 3-5 days for design and printing. Delivery within Chennai takes an additional 1-2 days." },
+              { q: "Do you deliver outside of Chennai?", a: "Currently, we only offer delivery within Chennai to ensure our premium products arrive in pristine condition. Shipping charges apply based on your exact location." },
+              { q: "Can I review the magazine before it gets printed?", a: "Yes! We want you to absolutely love your custom piece. We will send a digital preview of the layout for your approval before it goes to print." },
+            ].map((faq, i) => (
+              <details key={i} className="group bg-[#FDFBFB]/80 dark:bg-zinc-950/80 backdrop-blur-md rounded-2xl border border-[#3a0005]/10 dark:border-zinc-800 [&_summary::-webkit-details-marker]:hidden animate-fade-in-up opacity-0 shadow-sm" style={{ animationDelay: `${(i + 2) * 100}ms` }}>
+                <summary className="flex cursor-pointer items-center justify-between gap-1.5 p-6 font-medium text-zinc-900 dark:text-zinc-100">
+                  <h3 className="text-lg">{faq.q}</h3>
+                  <span className="shrink-0 transition duration-300 group-open:-rotate-180 bg-[#3a0005]/10 dark:bg-[#E8A5B1]/20 p-2 rounded-full text-[#3a0005] dark:text-[#E8A5B1]">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" /></svg>
+                  </span>
+                </summary>
+                <div className="px-6 pb-6 text-zinc-600 dark:text-zinc-400 leading-relaxed border-t border-[#3a0005]/5 dark:border-zinc-800 pt-4 mt-2">
+                  <p>{faq.a}</p>
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 5. Order / Contact Section */}
       <section id="contact" className="w-full py-[100px] bg-white/70 dark:bg-zinc-900/70 backdrop-blur-3xl relative z-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in-up opacity-0 delay-200">
           <div className="bg-[#FDFBFB] dark:bg-zinc-950 rounded-[3rem] p-8 sm:p-16 border border-[#3a0005]/10 dark:border-zinc-800 shadow-2xl transition-transform duration-700 hover:scale-[1.02]">
