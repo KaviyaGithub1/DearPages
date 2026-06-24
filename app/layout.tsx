@@ -43,7 +43,7 @@ export default function RootLayout({
                   />
                 </div>
                 <span className="inline-block text-xl sm:text-2xl font-serif font-black tracking-tighter text-[#3a0005] dark:text-[#FDFBFB]">
-                  DearPages
+                  DearPages_art
                 </span>
               </a>
             </div>
