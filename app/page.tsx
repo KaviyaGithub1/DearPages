@@ -274,9 +274,9 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { name: "Priya S.", text: "The custom magazine exceeded all my expectations! The paper quality is premium and the aesthetic is just perfect.", stars: 5 },
-              { name: "Rahul M.", text: "I ordered a Marvel movie magazine for my brother's birthday. Best gift ever. He absolutely loved the personalization!", stars: 5 },
-              { name: "Anita K.", text: "The polaroids came out so cute. The packaging was beautiful and delivery was super fast in Chennai. Highly recommend!", stars: 5 }
+              { name: "Basilea Lincy", text: "The custom magazine exceeded all my expectations! The paper quality is premium and the aesthetic is just perfect.", stars: 5 },
+              { name: "Nikitha", text: "I ordered a Marvel movie magazine for my brother's birthday. Best gift ever. He absolutely loved the personalization!", stars: 5 },
+              { name: "Tharun", text: "The polaroids came out so cute. The packaging was beautiful and delivery was super fast in Chennai. Highly recommend!", stars: 5 }
             ].map((review, i) => (
               <div key={i} className="flex flex-col bg-white/60 dark:bg-zinc-900/60 backdrop-blur-md p-8 rounded-3xl border border-[#3a0005]/10 dark:border-zinc-800 shadow-xl animate-fade-in-up opacity-0" style={{ animationDelay: `${(i + 2) * 100}ms` }}>
                 <div className="flex gap-1 mb-4 text-yellow-400">
