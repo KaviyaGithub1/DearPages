@@ -37,7 +37,7 @@ export default function Home() {
       {/* 1. Hero Section */}
       <section className="relative w-full min-h-[90vh] flex flex-col items-center justify-center overflow-hidden bg-transparent">
         <div className="absolute inset-0 bg-gradient-to-br from-[#FDFBFB]/80 to-[#FDFBFB]/50 dark:from-zinc-950/80 dark:to-zinc-950/50 z-0"></div>
-        
+
         <div className="relative z-10 flex flex-col items-center gap-8 text-center px-4 sm:px-6">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#3a0005]/5 dark:bg-white/5 border border-[#3a0005]/10 dark:border-white/10 backdrop-blur-md text-[#3a0005] dark:text-zinc-300 text-sm font-medium animate-fade-in-up opacity-0">
             <span className="flex h-2 w-2 rounded-full bg-[#3a0005] dark:bg-[#E8A5B1] animate-pulse"></span>
@@ -78,9 +78,9 @@ export default function Home() {
               </p>
             </div>
             <div className="relative w-full max-w-lg mx-auto aspect-[4/5] sm:aspect-square rounded-[2rem] overflow-hidden shadow-2xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 animate-float">
-              <Image 
-                src="/logo.jpeg" 
-                alt="DearPages Logo" 
+              <Image
+                src="/logo.jpeg"
+                alt="DearPages Logo"
                 fill
                 className="object-cover transition-transform hover:scale-110 duration-1000"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -101,7 +101,7 @@ export default function Home() {
               We offer a range of premium services to bring your ideas to life. Add more services easily in the code!
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
               <div key={index} className="group flex flex-col items-center text-center p-8 rounded-3xl bg-white dark:bg-zinc-900 border border-[#3a0005]/10 dark:border-zinc-800 hover:-translate-y-3 transition-all duration-500 hover:shadow-2xl hover:shadow-[#3a0005]/10 dark:hover:shadow-[#E8A5B1]/5 animate-fade-in-up opacity-0" style={{ animationDelay: `${(index + 2) * 100}ms` }}>
@@ -263,16 +263,16 @@ export default function Home() {
       {/* Elegant Instagram Promo Section */}
       <section className="w-full py-[100px] bg-[#FDFBFB]/70 dark:bg-zinc-950/70 backdrop-blur-3xl relative z-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <a 
-            href="https://www.instagram.com/dearpages_art" 
-            target="_blank" 
+          <a
+            href="https://www.instagram.com/dearpages_art"
+            target="_blank"
             rel="noopener noreferrer"
             className="group block relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-white to-zinc-50 dark:from-zinc-900 dark:to-zinc-950 border border-zinc-200 dark:border-zinc-800 p-8 sm:p-12 transition-all duration-700 shadow-xl hover:shadow-[0_20px_60px_-15px_rgba(232,165,177,0.3)] dark:hover:shadow-[0_20px_60px_-15px_rgba(58,0,5,0.6)] hover:-translate-y-2"
           >
             <div className="absolute top-1/2 -translate-y-1/2 right-0 sm:right-12 p-4 opacity-[0.04] dark:opacity-10 group-hover:opacity-15 group-hover:-rotate-12 group-hover:scale-110 transition-all duration-1000 pointer-events-none">
-              <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="animate-[pulse_4s_ease-in-out_infinite]"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="animate-[pulse_4s_ease-in-out_infinite]"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
             </div>
-            
+
             <div className="relative z-10 flex flex-col sm:flex-row items-center gap-8 sm:gap-12">
               <div className="flex-shrink-0 flex items-center justify-center w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 p-[3px] shadow-lg group-hover:scale-105 transition-all duration-500 relative">
                 <div className="absolute inset-0 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 rounded-full blur-md opacity-0 group-hover:opacity-60 transition-opacity duration-500"></div>
@@ -280,7 +280,7 @@ export default function Home() {
                   <Image src="/logo.jpeg" alt="DearPages Logo" fill className="object-cover" sizes="(max-width: 768px) 96px, 112px" />
                 </div>
               </div>
-              
+
               <div className="flex-1 text-center sm:text-left">
                 <p className="text-sm font-bold tracking-widest text-[#3a0005] dark:text-[#E8A5B1] uppercase mb-2 group-hover:text-purple-600 dark:group-hover:text-yellow-400 transition-colors duration-500">Join Our Community</p>
                 <h2 className="text-3xl sm:text-4xl font-black text-zinc-900 dark:text-white mb-3 group-hover:translate-x-2 transition-transform duration-500">@DearPages_art</h2>
@@ -289,9 +289,9 @@ export default function Home() {
                   <span className="font-semibold text-zinc-900 dark:text-white bg-gradient-to-r from-purple-600 to-red-500 bg-[length:0%_2px] bg-no-repeat bg-bottom group-hover:bg-[length:100%_2px] transition-all duration-700">Like, Share, Follow, and Order!</span>
                 </p>
               </div>
-              
+
               <div className="hidden sm:flex flex-shrink-0 items-center justify-center w-14 h-14 rounded-full bg-zinc-100 dark:bg-zinc-800 group-hover:bg-gradient-to-tr group-hover:from-yellow-400 group-hover:to-purple-600 text-zinc-400 group-hover:text-white transition-all duration-500 group-hover:scale-110 shadow-md">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-500"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-500"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
               </div>
             </div>
           </a>
@@ -310,15 +310,15 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="https://wa.me/919345708986" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#3a0005] text-[#FDFBFB] font-bold text-lg hover:bg-[#1a0002] transition-colors shadow-lg shadow-[#3a0005]/30">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
                 WhatsApp Us
               </a>
               <a href="tel:+919345708986" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white dark:bg-zinc-800 text-[#3a0005] dark:text-white border border-[#3a0005]/20 dark:border-zinc-700 font-bold text-lg hover:bg-[#FDFBFB] dark:hover:bg-zinc-700 transition-colors">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
                 Call: 9345708986
               </a>
             </div>
-            
+
             <div className="mt-10">
               <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#3a0005]/5 dark:bg-white/5 border border-[#3a0005]/10 dark:border-white/10 text-[#3a0005] dark:text-zinc-300 text-sm font-medium">
                 <span className="flex h-2 w-2 rounded-full bg-[#3a0005] dark:bg-[#E8A5B1]"></span>
