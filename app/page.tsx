@@ -141,11 +141,11 @@ export default function Home() {
                 <div className="flex flex-col gap-1 pt-4 border-t border-zinc-100 dark:border-zinc-800">
                   <div className="flex justify-between items-center text-sm font-medium text-zinc-900 dark:text-zinc-100">
                     <span>10 Pages</span>
-                    <span className="text-[#3a0005] dark:text-[#E8A5B1] font-bold bg-[#3a0005]/5 dark:bg-[#E8A5B1]/10 border border-[#3a0005]/20 dark:border-[#E8A5B1]/20 px-2.5 py-0.5 rounded-md shadow-sm">₹249</span>
+                    <span className="text-[#3a0005] dark:text-[#E8A5B1] font-bold bg-[#3a0005]/5 dark:bg-[#E8A5B1]/10 border border-[#3a0005]/20 dark:border-[#E8A5B1]/20 px-2.5 py-0.5 rounded-md shadow-sm">₹399</span>
                   </div>
                   <div className="flex justify-between items-center text-sm font-medium text-zinc-900 dark:text-zinc-100">
                     <span>15+ Pages</span>
-                    <span className="text-[#3a0005] dark:text-[#E8A5B1] font-bold bg-[#3a0005]/5 dark:bg-[#E8A5B1]/10 border border-[#3a0005]/20 dark:border-[#E8A5B1]/20 px-2.5 py-0.5 rounded-md shadow-sm">₹499</span>
+                    <span className="text-[#3a0005] dark:text-[#E8A5B1] font-bold bg-[#3a0005]/5 dark:bg-[#E8A5B1]/10 border border-[#3a0005]/20 dark:border-[#E8A5B1]/20 px-2.5 py-0.5 rounded-md shadow-sm">₹799</span>
                   </div>
                 </div>
               </div>
